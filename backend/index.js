@@ -25,7 +25,7 @@ app.use(cookieParser());
 
 // cors for cross origin resorce sharing 
 app.use(cors({
-    origin:"http://localhost:5173",
+    origin:"https://urlshortner-frontend-8z6d.onrender.com/",
     credentials:true,
     methods:"GET,POST,PUT"
 }));
