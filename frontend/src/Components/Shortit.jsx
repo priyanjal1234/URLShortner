@@ -18,11 +18,11 @@ const Shortit = () => {
 
 
         try {
-            const responce = await axios.post("http://localhost:7000/api/v2/url/short",url);
+            const responce = await axios.post("https://urlshortner-backend-bg9r.onrender.com/api/v2/url/short",url);
             console.log(responce);
 
             if(responce.data.success){
-                const sh_url = "http://localhost:7000/u/"+responce.data.isUrl.shorturl;
+                const sh_url = "https://urlshortner-frontend-8z6d.onrender.com/u/"+responce.data.isUrl.shorturl;
                 setShorturl(sh_url);
             }
             else{
